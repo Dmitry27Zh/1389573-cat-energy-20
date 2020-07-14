@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Жидков](https://up.htmlacademy.ru/adaptive/20/user/1389573).
-* Наставник: [Михал Кислый].
+* Наставник: [Михал Кислый](https://up.htmlacademy.ru/adaptive/20/user/1118577).
 
 ---
 
