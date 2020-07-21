@@ -1,0 +1,33 @@
+.catalog__product-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  a {
+    color: $special-dark-gray-2;
+  }
+}
+
+.catalog__product-properties {
+  font-family: $font-family-additional;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-gray;
+  th {
+    font-weight: normal;
+  }
+}
+
+.catalog__extension-slogan {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.catalog__extension-description {
+  font-family: $font-family-additional;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-gray;
+}
