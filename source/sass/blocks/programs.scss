@@ -1,27 +1,26 @@
 .programs {
   padding-top: 22px;
   padding-bottom: 27px;
-}
-
-.programs__item {
-  background-color: $basic-gray;
-}
-
-.programs__title {
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.programs__description {
-  font-family: $font-family-additional;
-  color: $special-dark-gray;
-}
-
-.programs__link {
-  font-size: 16px;
-  line-height: 16px;
-  color: $basic-black;
-  text-transform: uppercase;
+  &__wrapper {
+    @include wrapper-center;
+  }
+  &__item {
+    background-color: $basic-gray;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  &__description {
+    font-family: $font-family-additional;
+    color: $special-dark-gray;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic-black;
+    text-transform: uppercase;
+  }
 }

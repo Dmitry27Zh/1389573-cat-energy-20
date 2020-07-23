@@ -1,20 +1,22 @@
-.additional__title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
-}
-
-.additional__item-title {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: normal;
-  color: $special-dark-gray-2;
-  text-transform: uppercase;
-}
-
-
-.additional__item-info {
-  font-size: 14px;
-  line-height: 14px;
-  color: $special-dark-gray;
+.additional {
+  &__wrapper {
+    @include wrapper-center;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+  &__item-title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+    color: $special-dark-gray-2;
+    text-transform: uppercase;
+  }
+  &__item-info {
+    font-size: 14px;
+    line-height: 14px;
+    color: $special-dark-gray;
+  }
 }

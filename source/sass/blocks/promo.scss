@@ -4,15 +4,15 @@
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   color: $basic-white;
-}
-
-
-.promo__title {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.promo__slogan {
-  line-height: 14px;
-  text-transform: uppercase;
+  &__wrapper {
+    @include wrapper-center;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  &__slogan {
+    line-height: 14px;
+    text-transform: uppercase;
+  }
 }
