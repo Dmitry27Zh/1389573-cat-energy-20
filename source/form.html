@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин питания для котов Cat Energy - подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -31,13 +32,13 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page-main__title page-title">Подбор программы</h1>
     <section class="form">
       <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       <form class="form__fill" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__fieldset">
           <ul class="form__fieldset-list">
-            <li class="form__fieldset-item">
+            <li class="form__fieldset-item form__fieldset-item--">
               <label for="cat-name">Имя:<sup>*</sup></label>
               <input type="text" id="cat-name" name="cat-name" placeholder="Барсик">
             </li>
@@ -66,46 +67,46 @@
               <label for="cat-advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
-            <ul class="form__fieldset-list">
-              <li class="form__fieldset-item">
-                <label for="owner-email">e-mail:<sup>*</sup></label>
-                <input type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com">
-              </li>
-              <li class="form__fieldset-item">
-                <label for="owner-tel">Телефон:<sup>*</sup></label>
-                <input type="tel" id="owner-tel" name="owner-tel" value="8 (960) 900-60-90">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Комментарий</legend>
-            <textarea name="cat-about">Расскажите обо всех повадках кота</textarea>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Дополнительно</legend>
-            <ul class="form__fieldset-list">
-              <li class="form__fieldset-item">
-                <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
-                <label for="sugar">Сахарозаменитель</label>
-              </li>
-              <li class="form__fieldset-item">
-                <input class="visually-hidden" type="checkbox" name="water" id="water">
-                <label for="water">Питьевая вода</label>
-              </li>
-              <li class="form__fieldset-item">
-                <input class="visually-hidden" type="checkbox" name="milk" id="milk">
-                <label for="milk">Молоко</label>
-              </li>
-              <li class="form__fieldset-item">
-                <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                <label for="vitamins">Витамины</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="form__submit button" type="submit">Отправить заявку</button>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
+          <ul class="form__fieldset-list">
+            <li class="form__fieldset-item">
+              <label for="owner-email">e-mail:<sup>*</sup></label>
+              <input type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com">
+            </li>
+            <li class="form__fieldset-item">
+              <label for="owner-tel">Телефон:<sup>*</sup></label>
+              <input type="tel" id="owner-tel" name="owner-tel" value="8 (960) 900-60-90">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Комментарий</legend>
+          <textarea name="cat-about">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Дополнительно</legend>
+          <ul class="form__fieldset-list">
+            <li class="form__fieldset-item">
+              <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+              <label for="sugar">Сахарозаменитель</label>
+            </li>
+            <li class="form__fieldset-item">
+              <input class="visually-hidden" type="checkbox" name="water" id="water">
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="form__fieldset-item">
+              <input class="visually-hidden" type="checkbox" name="milk" id="milk">
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="form__fieldset-item">
+              <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+              <label for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form__submit button" type="submit">Отправить заявку</button>
       </form>
       <p class="form__info">* — Обязательные поля</p>
     </section>
