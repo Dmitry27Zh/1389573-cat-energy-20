@@ -1,7 +1,11 @@
-@mixin font($font-size: 16px, $font-family) {
+@mixin font($font-size, $font-family) {
   font-size: $font-size;
   font-family: $font-family;
   line-height: $line-height;
 }
 
+@mixin wrapper-center {
+  width: 280px;
+  margin: 0 auto;
+}
 

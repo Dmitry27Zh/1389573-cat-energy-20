@@ -1,5 +1,11 @@
 .page-footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
   background-color: $basic-gray;
+}
+
+.page-footer__wrapper {
+  @include wrapper-center;
 }
 
 .page-footer__copyright {

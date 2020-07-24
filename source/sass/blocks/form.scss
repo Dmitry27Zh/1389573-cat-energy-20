@@ -1,0 +1,42 @@
+.form {
+  input, textarea {
+    font: inherit;
+    text-transform: uppercase;
+    color: inherit;
+  }
+}
+
+.form__wrapper {
+  @include wrapper-center;
+}
+
+.form__title {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.form__fieldset-title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__fieldset-item {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  &--text {
+    color: $special-dark-gray;
+  }
+  &--radio {
+    color: $special-dark-gray-2;
+  }
+}
+
+.form__fieldset-message {
+  color: $special-dark-gray;
+}
+
+.form__info {
+  font-family: $font-family-additional;
+  line-height: 16px;
+}

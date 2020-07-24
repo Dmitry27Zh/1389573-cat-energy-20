@@ -2,8 +2,11 @@
   padding-bottom: 42px;
 }
 
+.properties__wrapper {
+  @include wrapper-center;
+}
+
 .properties__description {
   font-family: $font-family-additional;
   color: $special-dark-gray;
 }
-

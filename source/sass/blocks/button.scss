@@ -2,10 +2,8 @@
   background-color: $basic-green;
   color: $basic-white;
   text-transform: uppercase;
-}
-
-
-.button--additional {
-  background-color: $basic-gray;
-  color: $special-dark-gray;
+  &--additional {
+    background-color: $basic-gray;
+    color: $special-dark-gray;
+  }
 }

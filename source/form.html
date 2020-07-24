@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин питания для котов Cat Energy - подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -31,50 +32,51 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page-main__title page-title">Подбор программы</h1>
     <section class="form">
-      <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
-      <form class="form__fill" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__fieldset">
-          <ul class="form__fieldset-list">
-            <li class="form__fieldset-item">
-              <label for="cat-name">Имя:<sup>*</sup></label>
-              <input type="text" id="cat-name" name="cat-name" placeholder="Барсик">
-            </li>
-            <li class="form__fieldset-item">
-              <label for="cat-weight">Вес (кг):<sup>*</sup></label>
-              <input type="text" id="cat-weight" name="cat-weight" placeholder="7">
-            </li>
-            <li class="form__fieldset-item">
-              <label for="cat-age">Возраст (лет):</label>
-              <input type="text" id="cat-age" name="cat-age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <ul class="form__fieldset-list">
-            <li class="form__fieldset-item">
-              <input class="visually-hidden" type="radio" id="cat-slim" name="program" value="slim" checked>
-              <label for="cat-slim">Похудение</label>
-            </li>
-            <li class="form__fieldset-item">
-              <input class="visually-hidden" type="radio" id="cat-pro" name="program" value="pro">
-              <label for="cat-pro">Набор массы</label>
-            </li>
-            <li class="form__fieldset-item">
-              <input class="visually-hidden" type="radio" id="cat-advice" name="program" value="advice">
-              <label for="cat-advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
+      <div class="form__wrapper">
+        <h2 class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+        <form class="form__fill" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset">
+            <ul class="form__fieldset-list">
+              <li class="form__fieldset-item form__fieldset-item--text">
+                <label for="cat-name">Имя:<sup>*</sup></label>
+                <input type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+              </li>
+              <li class="form__fieldset-item form__fieldset-item--text">
+                <label for="cat-weight">Вес (кг):<sup>*</sup></label>
+                <input type="text" id="cat-weight" name="cat-weight" placeholder="7">
+              </li>
+              <li class="form__fieldset-item form__fieldset-item--text">
+                <label for="cat-age">Возраст (лет):</label>
+                <input type="text" id="cat-age" name="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <ul class="form__fieldset-list">
+              <li class="form__fieldset-item form__fieldset-item--radio">
+                <input class="visually-hidden" type="radio" id="cat-slim" name="program" value="slim" checked>
+                <label for="cat-slim">Похудение</label>
+              </li>
+              <li class="form__fieldset-item form__fieldset-item--radio">
+                <input class="visually-hidden" type="radio" id="cat-pro" name="program" value="pro">
+                <label for="cat-pro">Набор массы</label>
+              </li>
+              <li class="form__fieldset-item form__fieldset-item--radio">
+                <input class="visually-hidden" type="radio" id="cat-advice" name="program" value="advice">
+                <label for="cat-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
             <ul class="form__fieldset-list">
-              <li class="form__fieldset-item">
+              <li class="form__fieldset-item form__fieldset-item--text">
                 <label for="owner-email">e-mail:<sup>*</sup></label>
                 <input type="email" id="owner-email" name="owner-email" value="kuklachev@gmail.com">
               </li>
-              <li class="form__fieldset-item">
+              <li class="form__fieldset-item form__fieldset-item--text">
                 <label for="owner-tel">Телефон:<sup>*</sup></label>
                 <input type="tel" id="owner-tel" name="owner-tel" value="8 (960) 900-60-90">
               </li>
@@ -82,7 +84,7 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__fieldset-title">Комментарий</legend>
-            <textarea name="cat-about">Расскажите обо всех повадках кота</textarea>
+            <textarea class="form__fieldset-message" name="cat-about">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__fieldset-title">Дополнительно</legend>
@@ -106,16 +108,19 @@
             </ul>
           </fieldset>
           <button class="form__submit button" type="submit">Отправить заявку</button>
-      </form>
-      <p class="form__info">* — Обязательные поля</p>
+        </form>
+        <p class="form__info">* — Обязательные поля</p>
+      </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="contacts__text">
-        <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="contacts__text">
+          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img src="https://via.placeholder.com/320x362" alt="Расположение на карте" width="320" height="362">
       </div>
-      <img src="https://via.placeholder.com/320x362" alt="Расположение на карте" width="320" height="362">
     </section>
   </main>
   <footer class="page-footer">

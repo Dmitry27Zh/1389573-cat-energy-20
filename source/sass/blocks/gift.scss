@@ -1,0 +1,11 @@
+.gift__wrapper {
+  @include wrapper-center;
+}
+
+.gift__title {
+  font-family: $font-family-additional;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  background-color: $basic-green;
+  }
