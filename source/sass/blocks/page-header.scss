@@ -1,7 +1,9 @@
 .page-header {
   padding-top: 11px;
   padding-bottom: 17px;
-  &__wrapper {
-    @include wrapper-center;
-  }
+}
+
+
+.page-header__wrapper {
+  @include wrapper-center;
 }

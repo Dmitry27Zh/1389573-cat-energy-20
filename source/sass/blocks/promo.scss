@@ -1,18 +1,21 @@
 .promo {
   padding-top: 27px;
   background-color: $basic-green;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   color: $basic-white;
-  &__wrapper {
-    @include wrapper-center;
-  }
-  &__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-  &__slogan {
-    line-height: 14px;
-    text-transform: uppercase;
-  }
+}
+
+.promo__wrapper {
+  @include wrapper-center;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  line-height: 14px;
+  text-transform: uppercase;
 }

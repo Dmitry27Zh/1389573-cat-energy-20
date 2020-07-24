@@ -18,6 +18,7 @@
 
 @import "utils/mixins.scss";
 @import "utils/variables.scss";
+@import "global.scss";
 @import "blocks/page-header.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/page-main.scss";
@@ -34,15 +35,6 @@
 @import "blocks/gift.scss";
 @import "blocks/form.scss";
 @import "blocks/page-footer.scss";
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: $font-family-main;
-  font-size: 14px;
-  line-height: 18px;
-  color: $basic-black;
-}
 
 /* list reset */
 
