@@ -11,8 +11,7 @@
 }
 
 .promo__title {
-  font-size: 36px;
-  line-height: 36px;
+  @include font(36px, 36px);
 }
 
 .promo__slogan {

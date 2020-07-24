@@ -1,7 +1,5 @@
 .site-nav__link {
-  font-size: 20px;
-  font-weight: medium;
-  line-height: 20px;
+  @include font(20px, 20px, 500);
   text-transform: uppercase;
   color: $basic-black;
 }
