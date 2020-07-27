@@ -1,21 +1,65 @@
 .promo {
-  padding-top: 27px;
-  background-color: $basic-green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  color: $basic-white;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    padding-top: 27px;
+    background-color: $basic-green;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top, top center;
+    color: $basic-white;
+  }
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+  }
 }
 
 .promo__wrapper {
-  @include wrapper-center;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__text {
+    padding-left: 83px;
+  }
 }
 
 .promo__title {
-  font-size: 36px;
-  line-height: 36px;
+  margin: 0;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 250px;
+    text-align: center;
+    @include font(36px, 36px);
+  }
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    margin-bottom: 40px;
+    @include font(60px, 60px);
+  }
 }
 
 .promo__slogan {
-  line-height: 14px;
+  margin: 0;
   text-transform: uppercase;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    line-height: 14px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    @include font(20px, 20px);
+  }
+}
+
+.promo__link {
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+  }
 }

@@ -1,6 +1,7 @@
 // Начните писать стили здесь
+
 @font-face {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   src:
     local("Oswald"),
     url(../fonts/oswaldregular.woff2) format("woff2"),
@@ -8,8 +9,8 @@
 }
 
 @font-face {
-  font-family: "Oswald", sans-serif;
-  font-weight: medium;
+  font-family: "Oswald";
+  font-weight: 500;
   src:
     local("Oswald"),
     url(../fonts/oswaldmedium.woff2) format("woff2"),
@@ -18,8 +19,9 @@
 
 @import "utils/mixins.scss";
 @import "utils/variables.scss";
-@import "global.scss";
+@import "utils/global.scss";
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-title.scss";
@@ -35,6 +37,5 @@
 @import "blocks/gift.scss";
 @import "blocks/form.scss";
 @import "blocks/page-footer.scss";
-
-/* list reset */
+@import "blocks/social.scss";
 

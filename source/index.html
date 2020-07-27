@@ -3,16 +3,16 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин питания для котов Cat Energy - главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper wrapper-center">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/34x38" alt="Логотип функционального питания" width="34" height="38">
-        <img src="https://via.placeholder.com/101x18" alt="Cat Energy" width="101" height="18">
+        <img src="https://via.placeholder.com/191x38" alt="Логотип Cat Energy" width="191" height="38">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать меню</span></button>
@@ -33,16 +33,18 @@
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин функционального питания для котов Cat Energy</h1>
     <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+      <div class="promo__wrapper wrapper-center">
+        <div class="promo__text">
+          <h2 class="promo__title">Функциональное питание для котов</h2>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        </div>
         <img class="promo__picture" src="https://via.placeholder.com/280x270" alt="Фотография продукта" width="280"
           height="270">
         <a class="promo__link button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
-      <div class="programs__wrapper">
+      <div class="programs__wrapper wrapper-center">
         <h2 class="visually-hidden">Программы</h2>
         <ul class="programs__list">
           <li class="programs__item">
@@ -62,7 +64,7 @@
       </div>
     </section>
     <section class="properties">
-      <div class="properties__wrapper">
+      <div class="properties__wrapper wrapper-center">
         <h2 class="properties__title section-title">Как это работает</h2>
         <ul class="properties__list">
           <li class="properties__item properties__item--components">
@@ -82,17 +84,21 @@
       </div>
     </section>
     <section class="result">
-      <div class="result__wrapper">
-        <h2 class="result__title section-title">Живой пример</h2>
-        <p class="result__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="result__indicators">
-          <p class="result__indicator">5 кг <span class="result__indicator-name">снижение веса</span></p>
-          <p class="result__indicator">60 дней <span class="result__indicator-name">затрачено времени</span></p>
+      <div class="result__wrapper wrapper-center">
+        <div class="result__text">
+          <h2 class="result__title section-title">Живой пример</h2>
+          <p class="result__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="result__numbers">
+            <div class="result__indicators">
+              <p class="result__indicator">5 кг <span class="result__indicator-name">снижение веса</span></p>
+              <p class="result__indicator">60 дней <span class="result__indicator-name">затрачено времени</span></p>
+            </div>
+            <p class="result__cost">Затраты на питание: 15 000 РУБ.</p>
+          </div>
         </div>
-        <p class="result__cost">Затраты на питание: 15 000 РУБ.</p>
         <div class="result__slider">
           <ul class="result__slider-list">
             <li class="result__slider-item result__slider-item--current">
@@ -113,19 +119,21 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper wrapper-center">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="contacts__text">
           <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <img src="https://via.placeholder.com/320x362" alt="Расположение на карте" width="320" height="362">
+        <img class="contacts__map" src="https://via.placeholder.com/320x362" alt="Расположение на карте" width="320"
+          height="362">
       </div>
     </section>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper wrapper-center">
         <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/128x24" alt="Cat energy" width="128" height="24">
+          <img class="page-footer__logo-img" src="https://via.placeholder.com/128x24" alt="Cat energy" width="128"
+            height="24">
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">
@@ -140,7 +148,8 @@
         </ul>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
-          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML академии" width="27" height="34">
+          <img class="page-footer__copyright-logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML академии"
+            width="27" height="34">
         </a>
       </div>
     </footer>

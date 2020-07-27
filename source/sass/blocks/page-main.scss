@@ -1,5 +1,13 @@
 .page-main__title {
-  padding-top: 27px;
-  padding-bottom: 40px;
-  @include wrapper-center;
+  @media (max-width: $mobile-width) {
+    padding-top: 27px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 165px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }

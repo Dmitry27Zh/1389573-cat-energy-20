@@ -3,29 +3,48 @@
   padding-bottom: 27px;
 }
 
-.programs__wrapper {
-  @include wrapper-center;
+.programs__list {
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    margin-bottom: -20px;
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .programs__item {
   background-color: $basic-gray;
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .programs__title {
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: normal;
+  margin: 0;
+  @include font(24px, 37px);
   text-transform: uppercase;
 }
 
 .programs__description {
+  margin: 0;
   font-family: $font-family-additional;
-  color: $special-dark-gray;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    color: $special-dark-gray;
+  }
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
+  }
 }
 
 .programs__link {
-  font-size: 16px;
-  line-height: 16px;
   color: $basic-black;
   text-transform: uppercase;
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    @include font(16px, 16px);
+  }
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px);
+  }
 }

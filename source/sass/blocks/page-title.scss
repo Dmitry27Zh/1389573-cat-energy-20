@@ -1,5 +1,6 @@
 .page-title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: normal;
+  @include font(36px, 36px);
+  @media (min-width: $tablet-width) {
+    @include font(60px, 60px);
+  }
 }
