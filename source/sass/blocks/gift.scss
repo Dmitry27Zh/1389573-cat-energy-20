@@ -1,7 +1,3 @@
-.gift__wrapper {
-  @include wrapper-center;
-}
-
 .gift__title {
   font-family: $font-family-additional;
   @include font(16px, 20px);

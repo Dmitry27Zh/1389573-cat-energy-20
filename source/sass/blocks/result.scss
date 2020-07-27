@@ -1,15 +1,29 @@
 .result {
   padding-top: 27px;
   padding-bottom: 25px;
+  background-color: $basic-gray;
 }
 
-.result__wrapper {
-  @include wrapper-center;
+.result__inner {
+  @media (min-width: $desktop-width) {
+    padding-right: 780px;
+  }
 }
 
 .result__text {
   font-family: $font-family-additional;
   color: $special-dark-gray;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .result__numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.result__indicators {
+  display: flex;
 }
 
 .result__indicator {
@@ -26,6 +40,31 @@
 .result__cost {
   @include font(14px, 20px);
   text-transform: uppercase;
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 174px;
+    text-align: end;
+    @include font(20px, 20px);
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.result__slider-item {
+  display: none;
+}
+
+.result__slider-item--current {
+  display: block;
+}
+
+.result__slider-controls {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .result__slider-button {

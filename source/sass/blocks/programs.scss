@@ -3,20 +3,32 @@
   padding-bottom: 27px;
 }
 
-.programs__wrapper {
-  @include wrapper-center;
+.programs__list {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .programs__item {
   background-color: $basic-gray;
 }
 
+@media (max-width: $desktop-width) {
+  .programs__item:first-child {
+    margin-bottom: 30px;
+  }
+}
+
 .programs__title {
+  margin: 0;
   @include font(24px, 37px);
   text-transform: uppercase;
 }
 
 .programs__description {
+  margin: 0;
   font-family: $font-family-additional;
   color: $special-dark-gray;
 }
@@ -25,4 +37,7 @@
   @include font(16px, 16px);
   color: $basic-black;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px);
+  }
 }

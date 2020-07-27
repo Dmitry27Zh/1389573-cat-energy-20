@@ -1,4 +1,9 @@
 .button {
+  display: inline-block;
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    text-align: center;
+  }
   background-color: $basic-green;
   color: $basic-white;
   text-transform: uppercase;

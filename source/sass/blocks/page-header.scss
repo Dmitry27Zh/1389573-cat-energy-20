@@ -1,9 +1,30 @@
 .page-header {
   padding-top: 11px;
   padding-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 0px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
 }
-
 
 .page-header__wrapper {
-  @include wrapper-center;
+  display: flex;
+  justify-content: space-between;
 }
+
+.page-header__logo {
+  width: 191px;
+  height: 38px;
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
