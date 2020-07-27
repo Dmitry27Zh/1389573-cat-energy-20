@@ -4,6 +4,9 @@
 }
 
 .programs__list {
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    margin-bottom: -20px;
+  }
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,11 +16,8 @@
 
 .programs__item {
   background-color: $basic-gray;
-}
-
-@media (max-width: $desktop-width) {
-  .programs__item:first-child {
-    margin-bottom: 30px;
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -30,13 +30,20 @@
 .programs__description {
   margin: 0;
   font-family: $font-family-additional;
-  color: $special-dark-gray;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    color: $special-dark-gray;
+  }
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
+  }
 }
 
 .programs__link {
-  @include font(16px, 16px);
   color: $basic-black;
   text-transform: uppercase;
+  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+    @include font(16px, 16px);
+  }
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
   }

@@ -48,24 +48,16 @@ a {
 
 /* Wrapper */
 
-.page-header__wrapper,
-.promo__wrapper,
-.programs__wrapper,
-.properties__wrapper,
-.result__wrapper,
-.contacts__wrapper,
-.page-footer__wrapper,
-.catalog__wrapper,
-.additional__wrapper,
-.gift__wrapper,
-.contacts__wrapper,
-.page-title {
-  padding: 0 20px;
+.wrapper-center {
+  @media (min-width: $mobile-width) {
+    padding: 0 20px;
+  }
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
   @media (min-width: $desktop-width) {
-    max-width: $desktop-width - 60px;
+    padding: 0 40px;
+    max-width: $desktop-width - 80px;
     margin: 0 auto;
   }
 }

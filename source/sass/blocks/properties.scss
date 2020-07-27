@@ -8,6 +8,9 @@
 }
 
 .properties__list {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    margin-bottom: -20px;
+  }
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 250px 250px;
@@ -20,8 +23,8 @@
   }
 }
 
-.properties__item:not(:last-child) {
-  @media (max-width: $mobile-width) {
+.properties__item {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin-bottom: 20px;
   }
 }

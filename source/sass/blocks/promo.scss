@@ -1,5 +1,5 @@
 .promo {
-  @media (max-width: $mobile-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     padding-top: 27px;
     background-color: $basic-green;
     background-image: url("../img/index-background-mobile@1x.jpg");
@@ -16,7 +16,7 @@
 }
 
 .promo__wrapper {
-  @media (max-width: $mobile-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     text-align: center;
   }
 }
@@ -29,12 +29,12 @@
 
 .promo__title {
   margin: 0;
-  @include font(36px, 36px);
-  @media (max-width: $mobile-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin: 0 auto;
     margin-bottom: 25px;
     width: 250px;
     text-align: center;
+    @include font(36px, 36px);
   }
   @media (min-width: $tablet-width) {
     width: 420px;
@@ -46,7 +46,7 @@
 .promo__slogan {
   margin: 0;
   text-transform: uppercase;
-  @media (max-width: $mobile-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin: 0 auto;
     width: 200px;
     text-align: center;
@@ -54,8 +54,6 @@
   }
   @media (min-width: $tablet-width) {
     width: 283px;
-  }
-  @media (min-width: $desktop-width) {
     @include font(20px, 20px);
   }
 }
