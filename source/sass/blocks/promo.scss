@@ -59,6 +59,9 @@
 }
 
 .promo__link {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    font: inherit;
+  }
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
   }

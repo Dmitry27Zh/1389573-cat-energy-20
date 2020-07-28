@@ -10,8 +10,8 @@
     row-gap: 140px;
   }
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 80px;
+    grid-template-columns: 20.5% 20.5% 20.5% 20.5%;
+    column-gap: 6%;
   }
 }
 

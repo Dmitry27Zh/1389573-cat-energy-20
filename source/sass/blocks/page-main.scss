@@ -1,13 +1,22 @@
 .page-main__title {
-  @media (max-width: $mobile-width) {
-    padding-top: 27px;
-    padding-bottom: 40px;
-  }
+  margin-top: 27px;
+  margin-bottom: 40px;
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
-    padding-bottom: 165px;
+    margin-top: 65px;
+    margin-bottom: 55px;
   }
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    margin-top: 75px;
+  }
+}
+
+.page-main__columns {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 20.5%;
+    column-gap: 6%;
+    padding: 0 40px;
+    max-width: $desktop-width - 80px;
+    margin: 0 auto;
   }
 }

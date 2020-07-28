@@ -1,10 +1,13 @@
 .button {
   display: inline-block;
+  border: none;
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     width: 100%;
-    padding: 7px 0;
     text-align: center;
   }
+  padding: 10px 0;
+  font-family: $font-family-main;
+  @include font(16px, 20px);
   background-color: $basic-green;
   color: $basic-white;
   text-transform: uppercase;
