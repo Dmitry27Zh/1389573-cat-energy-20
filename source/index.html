@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
   <header class="page-header">
     <div class="page-header__wrapper wrapper-center">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/191x38" alt="Логотип Cat Energy" width="191" height="38">
+        <img class="page-header__logo-img" src="https://via.placeholder.com/191x38" alt="Логотип Cat Energy" width="191" height="38">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать меню</span></button>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item site-nav__item--current">
@@ -154,6 +154,22 @@
       </div>
     </footer>
   </main>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if(navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add('main-nav--closed');
+      }
+    })
+  </script>
 </body>
 
 </html>

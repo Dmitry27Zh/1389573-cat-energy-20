@@ -1,11 +1,3 @@
-.page__body {
-  @include reset;
-  font-family: $font-family-main;
-  @include font(14px, 18px);
-  color: $basic-black;
-  min-width: 320px;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {

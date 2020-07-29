@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  min-height: 38px;
   @media (min-width: $mobile-width) {
     padding-top: 11px;
     padding-bottom: 17px;
@@ -15,6 +17,7 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .page-header__logo {
@@ -30,5 +33,9 @@
     width: 202px;
     height: 59px;
   }
+}
+
+.page-header__logo-img {
+  display: block;
 }
 
