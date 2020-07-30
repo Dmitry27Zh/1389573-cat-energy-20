@@ -1,11 +1,22 @@
 .programs {
   padding-top: 22px;
   padding-bottom: 27px;
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
 }
 
 .programs__list {
-  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin-bottom: -20px;
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: -30px;
   }
   @media (min-width: $desktop-width) {
     display: grid;
@@ -16,8 +27,42 @@
 
 .programs__item {
   background-color: $basic-gray;
-  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin-bottom: 20px;
+    padding: 20px;
+    &::before {
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding: 77px 280px 52px 52px;
+    &::before {
+      top: 80px;
+      right: 60px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    padding: 40px 50px 55px;
+    &::before {
+      top: 40px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -25,16 +70,37 @@
   margin: 0;
   @include font(24px, 37px);
   text-transform: uppercase;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    padding: 6px 0;
+    padding-left: 73px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    @include font(36px, 36px);
+  }
+  @media (min-width: $desktop-width) {
+    padding: 32px 0;
+    padding-left: 162px;
+    margin-bottom: 42px;
+  }
 }
 
 .programs__description {
   margin: 0;
   font-family: $font-family-additional;
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
     color: $special-dark-gray;
+    border-bottom: 1px solid $programs-border;
   }
   @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
     @include font(16px, 24px);
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
   }
 }
 
