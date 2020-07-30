@@ -1,4 +1,5 @@
 .section-title {
+  margin: 0;
   @media (min-width: $mobile-width) {
     @include font(36px, 40px);
   }
