@@ -15,4 +15,11 @@
     background-color: $basic-gray;
     color: $special-dark-gray;
   }
+  &:hover,
+  &:focus {
+    background-color: $basic-green-2;
+  }
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 }
