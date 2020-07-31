@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   .result__text {
     width: 440px;
   }
@@ -18,6 +19,7 @@
   margin: 0;
   font-family: $font-family-additional;
   color: $special-dark-gray;
+
   @media (min-width: $tablet-width) {
     @include font(16px, 24px);
   }
@@ -41,21 +43,27 @@
 
 .result__indicator-name {
   font-family: $font-family-additional;
+
   @include font(12px, 12px);
   color: $special-dark-gray;
 }
 
 .result__cost {
   text-transform: uppercase;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     text-align: center;
+
     @include font(14px, 20px);
   }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 174px;
     text-align: end;
+
     @include font(20px, 20px);
   }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -63,6 +71,7 @@
 
 .result__slider-item {
   display: none;
+
   &--current {
     display: block;
   }
@@ -70,7 +79,7 @@
 
 .result__slider-button {
   font-family: inherit;
+
   @include font(16px, 20px);
   text-transform: uppercase;
 }
-

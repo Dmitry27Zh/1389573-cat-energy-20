@@ -5,13 +5,14 @@
 .gift__title {
   margin: 0;
   font-family: $font-family-additional;
+
   @include font(16px, 20px);
   color: $basic-white;
   background-color: $basic-green;
-  }
+}
 
-  .gift__wrapper {
-    @media (min-width: $desktop-width) {
-      @include reset;
-    }
+.gift__wrapper {
+  @media (min-width: $desktop-width) {
+    @include reset;
   }
+}

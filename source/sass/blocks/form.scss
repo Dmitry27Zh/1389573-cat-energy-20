@@ -1,11 +1,14 @@
 .form {
-  input, textarea {
+  input,
+  textarea {
     font: inherit;
     text-transform: uppercase;
   }
+
   input {
     color: inherit;
   }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 90%;
     margin: 0 auto;
@@ -16,6 +19,7 @@
   width: 230px;
   margin: 0;
   text-transform: uppercase;
+
   @include font(14px, 18px);
 }
 
@@ -33,6 +37,7 @@
     display: flex;
     justify-content: space-between;
   }
+
   .form__fieldset {
     @media (min-width: $desktop-width) {
       width: 46%;
@@ -46,24 +51,29 @@
       display: flex;
       justify-content: space-between;
     }
+
     .form__fieldset-item {
       @media (min-width: $desktop-width) {
         width: 46%;
       }
     }
   }
+
   &--additional {
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       display: grid;
       grid-template-columns: 46% 46%;
       justify-content: space-between;
     }
+
     @media (min-width: $desktop-width) {
       display: flex;
     }
+
     .form__fieldset-item {
       width: 23%;
     }
+
     .form__fieldset-item:nth-child(2) {
       @media (min-width: $desktop-width) {
         margin-right: auto;
@@ -75,11 +85,13 @@
 .form__fieldset-item {
   @include font(16px, 18px);
   text-transform: uppercase;
+
   &--text {
     display: flex;
     align-items: baseline;
     color: $special-dark-gray;
   }
+
   &--radio {
     color: $special-dark-gray-2;
   }
@@ -109,12 +121,15 @@
 .form__info {
   font-family: $font-family-additional;
   line-height: 16px;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     text-align: center;
   }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 46%;
   }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -122,6 +137,7 @@
 
 .form__submit {
   @include font(16px, 20px);
+
   @media (min-width: $tablet-width) {
     width: 46%;
   }

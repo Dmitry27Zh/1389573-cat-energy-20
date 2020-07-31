@@ -1,0 +1,45 @@
+.social-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 32px;
+    margin-bottom: 22px;
+    border-top: 1px solid $gray-border;
+    border-bottom: 1px solid $gray-border;
+  }
+}
+
+.social-list__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-list__link:not(:last-child) {
+  &:hover,
+  &:focus {
+    path {
+      fill: $basic-green;
+    }
+  }
+}
+
+.social-list__link:last-child {
+  &:hover,
+  &:focus {
+    path {
+      stroke: $basic-green;
+    }
+  }
+}
+
+.social-list__link:active .social-list__link-icon {
+  opacity: 0.3;
+}

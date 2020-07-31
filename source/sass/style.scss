@@ -4,8 +4,8 @@
   font-family: "Oswald";
   src:
     local("Oswald"),
-    url(../fonts/oswaldregular.woff2) format("woff2"),
-    url(../fonts/oswaldregular.woff) format("woff");
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
 }
 
 @font-face {
@@ -13,23 +13,25 @@
   font-weight: 500;
   src:
     local("Oswald"),
-    url(../fonts/oswaldmedium.woff2) format("woff2"),
-    url(../fonts/oswaldmedium.woff) format("woff");
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
 }
 
 @import "utils/mixins.scss";
 @import "utils/variables.scss";
 @import "utils/global.scss";
+@import "utils/wrapper-center.scss";
+@import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/section-title.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-title.scss";
 @import "blocks/promo.scss";
-@import "blocks/button.scss";
 @import "blocks/programs.scss";
 @import "blocks/properties.scss";
-@import "blocks/section-title.scss";
 @import "blocks/result.scss";
 @import "blocks/contacts.scss";
 @import "blocks/catalog.scss";
@@ -37,5 +39,4 @@
 @import "blocks/gift.scss";
 @import "blocks/form.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/social.scss";
-
+@import "blocks/social-list.scss";

@@ -7,9 +7,11 @@
 .page-footer__wrapper {
   display: flex;
   align-items: center;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     flex-direction: column;
   }
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
   }
@@ -30,6 +32,18 @@
   font-family: $font-family-additional;
   font-size: 16px;
   color: $special-dark-gray;
+
+  &:hover,
+  &:focus {
+    .page-footer__copyright-logo path {
+      fill: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     width: 100%;
   }
@@ -38,5 +52,9 @@
 .page-footer__copyright-logo {
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin-left: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
   }
 }

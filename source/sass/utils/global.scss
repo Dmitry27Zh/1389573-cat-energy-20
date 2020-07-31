@@ -1,11 +1,3 @@
-.page__body {
-  @include reset;
-  font-family: $font-family-main;
-  @include font(14px, 18px);
-  color: $basic-black;
-  min-width: 320px;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -32,7 +24,7 @@ img {
 .programs__list,
 .properties__list,
 .result__slider-list,
-.social,
+.social-list,
 .catalog__list,
 .additional__list,
 .form__fieldset-list {
@@ -44,20 +36,4 @@ img {
 
 a {
   text-decoration: none;
-}
-
-/* Wrapper */
-
-.wrapper-center {
-  @media (min-width: $mobile-width) {
-    padding: 0 20px;
-  }
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-  @media (min-width: $desktop-width) {
-    padding: 0 40px;
-    max-width: $desktop-width - 80px;
-    margin: 0 auto;
-  }
 }
