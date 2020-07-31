@@ -99,6 +99,7 @@
     font: inherit;
   }
   @media (min-width: $tablet-width) {
+    width: auto;
     margin-left: 83px;
     padding: 14px 26px;
   }
