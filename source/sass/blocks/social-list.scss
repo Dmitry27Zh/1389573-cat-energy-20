@@ -13,7 +13,7 @@
   }
 }
 
-.social__item {
+.social-list__item {
   margin-right: 30px;
   &:last-child {
     margin-right: 0;
@@ -21,7 +21,7 @@
 }
 
 
-.social__link:not(:last-child) {
+.social-list__link:not(:last-child) {
   &:hover,
   &:focus {
     path {
@@ -30,7 +30,7 @@
   }
 }
 
-.social__link:last-child {
+.social-list__link:last-child {
   &:hover,
   &:focus {
     path {
@@ -39,6 +39,6 @@
   }
 }
 
-.social__link:active .social__link-icon {
+.social-list__link:active .social-list__link-icon {
   opacity: 0.3;
 }
