@@ -3,16 +3,21 @@
   margin-bottom: 0;
   padding-top: 27px;
   padding-bottom: 40px;
+
   @include font(36px, 36px);
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     border-top: 1px solid $gray-border;
     border-bottom: 1px solid $basic-gray-2;
   }
+
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-bottom: 55px;
+
     @include font(60px, 60px);
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 75px;
   }

@@ -19,6 +19,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -52,9 +53,11 @@
     height: 2px;
     background-color: $basic-black;
   }
+
   &::before {
     transform: rotate(45deg);
   }
+
   &::after {
     transform: rotate(-45deg);
   }

@@ -11,6 +11,7 @@
     column-gap: 60px;
     row-gap: 140px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 20.5% 20.5% 20.5% 20.5%;
     column-gap: 6%;
@@ -21,6 +22,7 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 25px;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     &::after {
       content: "";
@@ -33,16 +35,19 @@
       background-color: $basic-gray-2;
     }
   }
+
   @media (min-width: $tablet-width) {
     padding: 160px 40px 40px;
     background-color: $basic-gray;
   }
+
   &--extension {
     @media (min-width: $mobile-width) and (max-width: $tablet-width) {
       padding-top: 73px;
     }
     background-color: $basic-white;
     text-align: center;
+
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
@@ -53,10 +58,12 @@
 
 .catalog__product {
   min-height: 100px;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     display: flex;
     margin-bottom: 20px;
   }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
   }
@@ -64,9 +71,11 @@
 
 .catalog__product-picture {
   display: flex;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     width: 50%;
   }
+
   @media (min-width: $tablet-width) {
     position: absolute;
     justify-content: center;
@@ -81,9 +90,11 @@
 
 .catalog__product-img {
   display: block;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin: auto;
   }
+
   @media (min-width: $tablet-width) {
     align-self: flex-end;
   }
@@ -99,13 +110,16 @@
   margin: 0;
   margin-bottom: 18px;
   width: 76px;
+
   @include font(16px, 20px);
   color: $special-dark-gray-2;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+
     @include font(20px, 24px);
     text-align: center;
   }
@@ -118,19 +132,24 @@
 .catalog__product-properties {
   width: 100%;
   font-family: $font-family-additional;
+
   @include font(12px, 16px);
   color: $special-dark-gray;
-  border-collapse: collapse;;
-  th {
+  border-collapse: collapse;
+
+  .catalog__property-name {
     font-weight: normal;
   }
-  td {
+
+  .catalog__property-value {
     text-align: right;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    th,
-    td {
+
+    .catalog__property-name,
+    .catalog__property-value {
       padding: 5px 0;
       border-bottom: 1px solid $special-gray;
     }
@@ -147,9 +166,11 @@
 
 .catalog__extension-slogan {
   margin: 0;
+
   @include font(16px, 20px);
   text-transform: uppercase;
   color: $special-black;
+
   &::before,
   &::after {
     content: "";
@@ -162,13 +183,16 @@
     width: 30px;
     height: 2px;
     background-color: $catalog-extension-gray;
-    }
+  }
+
   &::after {
     transform: rotate(90deg);
   }
+
   @media (min-width: $tablet-width) {
     width: 134px;
     margin: 0 auto;
+
     &::before,
     &::after {
       top: 70px;
@@ -182,8 +206,10 @@
   margin-top: 8px;
   margin-bottom: 20px;
   font-family: $font-family-additional;
+
   @include font(12px, 16px);
   color: $special-dark-gray;
+
   @media (min-width: $tablet-width) {
     width: 167px;
     margin: 0 auto;

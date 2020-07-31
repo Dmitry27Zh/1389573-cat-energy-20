@@ -6,9 +6,11 @@
 
 .additional__title {
   margin: 0;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
   }
+
   @include font(24px, 24px);
 }
 
@@ -26,6 +28,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   @media (min-width: $desktop-width) {
     width: 65%;
   }
@@ -33,6 +36,7 @@
 
 .additional__item-title {
   margin: 0;
+
   @include font(16px, 16px);
   color: $special-dark-gray-2;
   text-transform: uppercase;
@@ -41,14 +45,18 @@
 .additional__item-info {
   display: flex;
   font-family: $font-family-additional;
+
   @include font(14px, 14px);
   color: $special-dark-gray;
+
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     justify-content: space-between;
   }
+
   @media (min-width: $tablet-width) {
     @include font(16px, 20px);
   }
+
   @media (min-width: $desktop-width) {
     width: 50%;
     justify-content: space-between;
@@ -63,10 +71,12 @@
 
 .additional__item-link {
   text-align: center;
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     width: 100%;
     padding: 6px 0;
   }
+
   @media (min-width: $desktop-width) {
     width: 27.85%;
     padding: 7px 0;

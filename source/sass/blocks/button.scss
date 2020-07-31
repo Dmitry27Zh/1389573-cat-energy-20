@@ -1,24 +1,29 @@
 .button {
   display: inline-block;
   border: none;
+
   @media (min-width: $mobile-width) and (max-width: $desktop-width) {
     width: 100%;
     text-align: center;
   }
   padding: 10px 0;
   font-family: $font-family-main;
+
   @include font(16px, 20px);
   background-color: $basic-green;
   color: $basic-white;
   text-transform: uppercase;
+
   &--additional {
     background-color: $basic-gray;
     color: $special-dark-gray;
   }
+
   &:hover,
   &:focus {
     background-color: $basic-green-2;
   }
+
   &:active {
     color: rgba($basic-white, 0.3);
   }

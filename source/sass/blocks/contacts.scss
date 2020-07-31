@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: $basic-white;
+
   @media (min-width: $desktop-width) {
     width: 570px;
   }
@@ -10,12 +11,15 @@
 .contacts__slogan {
   text-transform: uppercase;
   color: $special-black;
+
   @media (min-width: $mobile-width) {
     width: 140px;
     font-size: 16px;
   }
+
   @media (min-width: $tablet-width) {
     width: 170px;
+
     @include font(20px, 21px);
   }
 }
@@ -23,10 +27,13 @@
 .contacts__address {
   font-family: $font-family-additional;
   color: $special-dark-gray;
+
   @include font(14px, 20px);
+
   @media (min-width: $mobile-width) {
     width: 140px;
   }
+
   @media (min-width: $tablet-width) {
     width: 160px;
     font-size: 16px;
