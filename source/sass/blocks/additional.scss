@@ -27,7 +27,7 @@
 
 .additional__list {
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+
     border: 1px solid $special-gray;
   }
 
@@ -50,6 +50,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0 40px;
     padding-top: 26px;
     padding-bottom: 28px;
 
@@ -62,6 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
     padding-top: 15px;
     padding-bottom: 15px;
   }
