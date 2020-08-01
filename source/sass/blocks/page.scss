@@ -22,4 +22,13 @@
       }
     }
   }
+
+  &--form,
+  &--catalog {
+    .contacts {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+        background-color: $basic-gray;
+      }
+    }
+  }
 }
