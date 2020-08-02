@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .properties__title {

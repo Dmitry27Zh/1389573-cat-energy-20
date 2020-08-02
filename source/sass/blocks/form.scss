@@ -30,6 +30,7 @@
 
   @media (min-width: $tablet-width) {
     width: 323px;
+
     @include font(20px, 30px);
   }
 }
@@ -83,20 +84,20 @@
 
       &::before,
       &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -20px;
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: $gray-border;
-    }
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20px;
+        display: block;
+        width: 100vw;
+        height: 1px;
+        background-color: $gray-border;
+      }
 
-    &::after {
-      top: auto;
-      bottom: 0;
-    }
+      &::after {
+        top: auto;
+        bottom: 0;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -264,6 +265,7 @@
   padding: 13px;
   box-sizing: border-box;
   font-family: inherit;
+
   @include font(16px, 18px);
   text-transform: uppercase;
   color: $special-dark-gray;
