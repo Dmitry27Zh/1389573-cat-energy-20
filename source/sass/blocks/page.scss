@@ -30,6 +30,12 @@
         background-color: $basic-gray;
       }
     }
+
+    .site-nav__item:last-child {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+        border-bottom: none;
+      }
+    }
   }
 
   &--form {
