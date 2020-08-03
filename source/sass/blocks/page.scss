@@ -1,4 +1,6 @@
 .page__body {
+  overflow-x: hidden;
+
   @include reset;
   font-family: $font-family-main;
 
@@ -19,6 +21,29 @@
 
       .site-nav__link {
         color: $basic-white;
+      }
+    }
+  }
+
+  &--form,
+  &--catalog {
+    .contacts {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+        background-color: $basic-gray;
+      }
+    }
+
+    .site-nav__item:last-child {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &--form {
+    .page-title {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+        border-bottom: none;
       }
     }
   }

@@ -1,5 +1,4 @@
 .page-header {
-  position: relative;
   min-height: 38px;
 
   @media (min-width: $mobile-width) {
@@ -18,9 +17,17 @@
 }
 
 .page-header__wrapper {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 .page-header__logo {

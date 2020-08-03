@@ -5,20 +5,102 @@
 }
 
 .additional__title {
+  position: relative;
   margin: 0;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
-  }
+  padding-top: 28px;
+  padding-bottom: 35px;
 
   @include font(24px, 24px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: 20px;
+    top: 42px;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+
+    @include font(36px, 36px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      right: 100%;
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+    }
+
+    &::after {
+      top: 90px;
+      margin-left: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 75px;
+    padding-left: 0;
+
+    &::before {
+      margin-right: 40px;
+    }
+
+    &::before,
+    &::after {
+      top: 97px;
+    }
+  }
+}
+
+.additional__list {
+  @media (min-width: $tablet-width) {
+
+    border: 1px solid $special-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .additional__item {
+  padding-top: 13px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $special-gray;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    &:first-child {
+      border-top: 1px solid $special-gray;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    padding-top: 26px;
+    padding-bottom: 28px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -27,10 +109,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
     width: 65%;
+    margin-bottom: 0;
   }
 }
 
@@ -40,10 +124,15 @@
   @include font(16px, 16px);
   color: $special-dark-gray-2;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px);
+  }
 }
 
 .additional__item-info {
   display: flex;
+  margin: 0;
   font-family: $font-family-additional;
 
   @include font(14px, 14px);
@@ -51,6 +140,7 @@
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     justify-content: space-between;
+    margin: 15px 0;
   }
 
   @media (min-width: $tablet-width) {

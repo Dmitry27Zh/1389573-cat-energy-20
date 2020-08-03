@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .properties__title {
@@ -43,6 +47,32 @@
     top: 0;
     left: 0;
     background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--components {
+    &::before {
+      background-image: url("../img/icon-leaf.svg");
+    }
+  }
+
+  &--simplicity {
+    &::before {
+      background-image: url("../img/icon-tub.svg");
+    }
+  }
+
+  &--meal {
+    &::before {
+      background-image: url("../img/icon-eat.svg");
+    }
+  }
+
+  &--result {
+    &::before {
+      background-image: url("../img/icon-alarm.svg");
+    }
   }
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
