@@ -50,6 +50,7 @@
 
 .form__fieldset-title {
   position: relative;
+
   @include font(24px, 26px);
 
   &::after {
