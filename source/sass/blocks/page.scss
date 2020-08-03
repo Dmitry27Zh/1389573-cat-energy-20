@@ -1,8 +1,6 @@
-.page {
-  overflow-x: hidden;
-}
-
 .page__body {
+  overflow-x: hidden;
+
   @include reset;
   font-family: $font-family-main;
 
