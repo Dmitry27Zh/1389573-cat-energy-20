@@ -5,6 +5,7 @@
     font: inherit;
     text-transform: uppercase;
     color: inherit;
+    box-sizing: border-box;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -38,6 +39,7 @@
 .form__fieldset {
   @include reset;
   border: none;
+  max-width: 100%;
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin-top: 26px;
@@ -49,20 +51,11 @@
 }
 
 .form__fieldset-title {
-  position: relative;
+  display: block;
+  max-width: 100%;
+  padding: 0;
 
   @include font(24px, 26px);
-
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 15px;
-    margin-left: 20px;
-    width: 100vw;
-    height: 2px;
-    background-color: $basic-green;
-  }
 
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
     margin-bottom: 32px;
@@ -71,22 +64,42 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 100%;
-      width: 100vw;
-      margin-right: 40px;
-      height: 2px;
-      background-color: $basic-green;
-    }
-
-    &::after {
-      top: 20px;
-    }
-
     @include font(36px, 36px);
+  }
+}
+
+.form__fieldset-title-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 2px;
+    top: 15px;
+    width: calc(100vw - 100vw * 0.125 / 2);
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &::before {
+      top: 18px;
+      left: -11%;
+      width: 100vw;
+    }
+
+    .title-wrapper {
+      padding-left: 6.35%;
+      margin-left: -6.35%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 18px;
+      left: calc((100vw * 0.16) / 2 * -1);
+      width: 100vw;
+      }
   }
 }
 
@@ -115,8 +128,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: -20px;
-        display: block;
+        left: -7.14%;
         width: 100vw;
         height: 1px;
         background-color: $gray-border;
@@ -178,6 +190,7 @@
 }
 
 .form__fieldset-item {
+  max-width: 100%;
   margin-bottom: 14px;
 
   @include font(16px, 18px);
@@ -205,7 +218,7 @@
 .form__input-text {
   flex-grow: 1;
   padding: 14px;
-  padding-right: 50px;
+  padding-right: 47px;
   margin-left: 14px;
 
   &--email {
@@ -309,7 +322,7 @@
 }
 
 .form__line {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -326,13 +339,9 @@
     margin-top: 21px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 46%;
     font-size: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
   }
 }
 

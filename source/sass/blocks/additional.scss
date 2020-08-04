@@ -1,9 +1,3 @@
-.additional__wrapper {
-  @media (min-width: $desktop-width) {
-    @include reset;
-  }
-}
-
 .additional__title {
   position: relative;
   margin: 0;
@@ -12,51 +6,16 @@
 
   @include font(24px, 24px);
 
-  &::after {
-    content: "";
-    position: absolute;
-    margin-left: 20px;
-    top: 42px;
-    width: 100vw;
-    height: 2px;
-    background-color: $basic-green;
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 68px;
     padding-bottom: 80px;
-    padding-left: 40px;
 
     @include font(36px, 36px);
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 90px;
-      right: 100%;
-      width: 100vw;
-      height: 2px;
-      background-color: $basic-green;
-    }
-
-    &::after {
-      top: 90px;
-      margin-left: 40px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 75px;
     padding-left: 0;
-
-    &::before {
-      margin-right: 40px;
-    }
-
-    &::before,
-    &::after {
-      top: 97px;
-    }
   }
 }
 
