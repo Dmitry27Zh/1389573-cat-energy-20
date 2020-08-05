@@ -1,0 +1,21 @@
+/* Задаёт фон для перекрытия зелёной полоски*/
+
+.title-wrapper {
+  background-color: $basic-white;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+  }
+
+  &--fix {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+      display: inline-block;
+      width: 190px;
+    }
+  }
+}

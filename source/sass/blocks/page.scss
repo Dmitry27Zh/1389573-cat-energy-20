@@ -10,11 +10,6 @@
 
   &--index {
     @media (min-width: $desktop-width) {
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 50% 696px;
-
       .site-nav__item--current .site-nav__link::after {
         background-color: $basic-white;
       }

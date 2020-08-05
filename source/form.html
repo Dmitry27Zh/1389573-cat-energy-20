@@ -12,7 +12,11 @@
   <header class="page-header">
     <div class="page-header__wrapper wrapper-center">
       <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/191x38" alt="Логотип Cat Energy" width="191" height="38">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="38">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать меню</span></button>
@@ -72,26 +76,32 @@
             </fieldset>
           </div>
           <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
+            <div class="form__fieldset-title-wrapper">
+              <legend class="form__fieldset-title"><span class="title-wrapper title-wrapper--fix">Контактные данные (владельца кота)</span></legend>
+            </div>
             <ul class="form__fieldset-list form__fieldset-list--contacts">
               <li class="form__fieldset-item form__fieldset-item--text">
                 <label for="owner-email">e-mail:<sup>*</sup></label>
                 <input class="form__input-text form__input-text--email" type="email" id="owner-email" name="owner-email"
-                  value="kuklachev@gmail.com">
+                  placeholder="kuklachev@gmail.com">
               </li>
               <li class="form__fieldset-item form__fieldset-item--text">
                 <label for="owner-tel">Телефон:<sup>*</sup></label>
                 <input class="form__input-text form__input-text--phone" type="tel" id="owner-tel" name="owner-tel"
-                  value="8 (960) 900-60-90">
+                  placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
+          <div class="form__fieldset">
+            <div class="form__fieldset-title-wrapper">
+              <label class="form__fieldset-title" for="message"><span class="title-wrapper">Комментарий</span></label>
+            </div>
+            <textarea class="form__message" name="cat-about" id="message">Расскажите обо всех повадках кота</textarea>
+          </div>
           <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Комментарий</legend>
-            <textarea class="form__message" name="cat-about">Расскажите обо всех повадках кота</textarea>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__fieldset-title">Дополнительно</legend>
+            <div class="form__fieldset-title-wrapper">
+              <legend class="form__fieldset-title"><span class="title-wrapper">Дополнительно</span></legend>
+            </div>
             <ul class="form__fieldset-list form__fieldset-list--additional">
               <li class="form__fieldset-item">
                 <input class="visually-hidden form__input" type="checkbox" name="sugar" id="sugar" checked>
@@ -126,7 +136,9 @@
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> <br>Санкт-Петербург</p>
         </div>
       </div>
-      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596362191020!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596362191020!5m2!1sru!2sru"
+        width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
   </main>
   <footer class="page-footer">
