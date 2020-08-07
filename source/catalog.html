@@ -323,8 +323,11 @@
         <div class="gift__wrapper">
           <div class="gift__inner">
             <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
-            <img class="gift__photo" src="https://via.placeholder.com/280x289" alt="Фотография чехла для кота"
-              width="280" height="289">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gift-photo-tablet@1x.jpg 1x, img/gift-photo-tablet@2x.jpg 2x">
+              <img class="gift__photo" src="img/gift-photo-mobile@1x.jpg" srcset="img/gift-photo-mobile@2x.jpg 2x" alt="Фотография чехла для кота">
+            </picture>
           </div>
         </div>
       </section>
@@ -345,8 +348,8 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper-center">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-img" src="https://via.placeholder.com/128x24" alt="Cat energy" width="128"
-          height="24">
+        <img class="page-footer__logo-img" src="img/logo-footer.svg" alt="Cat energy" width="128"
+            height="24">
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">

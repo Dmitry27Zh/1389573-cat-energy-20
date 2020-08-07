@@ -1,12 +1,12 @@
 .gift {
-  min-height: 289px;
-
   @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    min-height: 289px;
     padding-top: 39px;
     padding-bottom: 40px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    height: 200px;
     padding-top: 70px;
     padding-bottom: 75px;
   }
@@ -83,4 +83,9 @@
 
 .gift__photo {
   display: block;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 100%;
+    height: 200px;
+  }
 }
