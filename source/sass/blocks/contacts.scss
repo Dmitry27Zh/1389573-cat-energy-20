@@ -72,6 +72,7 @@
 .contacts__map {
   display: block;
   width: 100%;
+  border: none;
 
   @media (min-width: $tablet-width) {
     height: 400px;

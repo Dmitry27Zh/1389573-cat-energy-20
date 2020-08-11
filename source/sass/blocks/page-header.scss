@@ -20,7 +20,7 @@
   position: relative;
   display: flex;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     flex-direction: column;
   }
 

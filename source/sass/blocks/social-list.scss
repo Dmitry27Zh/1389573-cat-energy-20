@@ -22,24 +22,24 @@
   }
 }
 
-.social-list__link:not(:last-child) {
+.social-list__link {
+  color: $special-gray-2;
+
   &:hover,
   &:focus {
-    path {
+    .social-list__link-icon {
       fill: $basic-green;
     }
   }
-}
 
-.social-list__link:last-child {
-  &:hover,
-  &:focus {
-    path {
+  &--fb:hover,
+  &--fb:focus {
+    .social-list__link-icon {
       stroke: $basic-green;
     }
   }
-}
 
-.social-list__link:active .social-list__link-icon {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }

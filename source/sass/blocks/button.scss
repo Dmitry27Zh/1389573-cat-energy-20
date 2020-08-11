@@ -2,6 +2,15 @@
   display: inline-block;
   border: none;
 
+  &:hover,
+  &:focus {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
   @media (min-width: $mobile-width) and (max-width: $desktop-width) {
     width: 100%;
     text-align: center;
@@ -17,14 +26,14 @@
   &--additional {
     background-color: $basic-gray;
     color: $special-dark-gray;
-  }
 
-  &:hover,
-  &:focus {
-    background-color: $basic-green-2;
-  }
+    &:hover,
+    &:focus {
+      background-color: $basic-gray-2;
+    }
 
-  &:active {
-    color: rgba($basic-white, 0.3);
+    &:active {
+      color: rgba($special-dark-gray, 0.3);
+    }
   }
 }
