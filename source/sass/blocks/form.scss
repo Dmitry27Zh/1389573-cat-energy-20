@@ -142,7 +142,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 25px;
-      padding-bottom: 25px;
+      padding-bottom: 29px;
       padding-left: 28px;
       border: 1px solid $form-input-border;
     }
@@ -157,6 +157,7 @@
     .form__fieldset-item {
       @media (min-width: $desktop-width) {
         width: 46%;
+        margin-bottom: 0;
       }
     }
   }
@@ -190,6 +191,7 @@
 }
 
 .form__fieldset-item {
+  position: relative;
   max-width: 100%;
   margin-bottom: 14px;
 
@@ -220,14 +222,40 @@
   padding: 14px;
   padding-right: 47px;
   margin-left: 14px;
+  outline: none;
+  border: 1px solid $special-gray;
 
-  &--email {
-    background: url("../img/icon-mail.svg") no-repeat right 20px top 50%;
+  &:focus {
+    border-color: $special-dark-gray;
   }
 
-  &--phone {
-    background: url("../img/icon-phone.svg") no-repeat right 20px top 50%;
+  &:invalid {
+    border-color: $status-error;
   }
+
+  &--email:focus ~ .form__input-icon {
+    stroke: $basic-green;
+  }
+
+  &--phone:focus ~ .form__input-icon {
+    fill: $basic-green;
+  }
+
+  &--email:invalid ~ .form__input-icon {
+    stroke: $status-error;
+  }
+
+  &--phone:invalid ~ .form__input-icon {
+    fill: $status-error;
+  }
+}
+
+.form__input-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
 }
 
 .form__label-radio,
@@ -253,6 +281,19 @@
     &::before {
       width: 38px;
       height: 38px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover,
+    &:focus {
+      &::before {
+        border-color: $input-hover-gray;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -306,6 +347,12 @@
   padding: 13px;
   box-sizing: border-box;
   font-family: inherit;
+  outline: none;
+  border: 1px solid $form-input-border;
+
+  &:focus {
+    border-color: $special-dark-gray;
+  }
 
   @include font(16px, 18px);
   text-transform: uppercase;
@@ -314,11 +361,6 @@
   @media (min-width: $tablet-width) {
     @include font(20px, 30px);
   }
-}
-
-.form__input-text,
-.form__message {
-  border: 1px solid $form-input-border;
 }
 
 .form__line {

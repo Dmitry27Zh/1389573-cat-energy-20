@@ -215,6 +215,10 @@
       transform-origin: top left;
     }
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .programs__link-icon {
