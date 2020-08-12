@@ -13,7 +13,7 @@
   }
 
   &--fix {
-    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
       display: inline-block;
       width: 190px;
     }

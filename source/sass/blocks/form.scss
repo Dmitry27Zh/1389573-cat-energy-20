@@ -37,7 +37,10 @@
 }
 
 .form__fieldset {
+  position: relative;
+
   @include reset;
+
   border: none;
   max-width: 100%;
 
@@ -52,8 +55,7 @@
 
 .form__fieldset-title {
   display: block;
-  max-width: 100%;
-  padding: 0;
+  width: 100%;
 
   @include font(24px, 26px);
 
@@ -66,10 +68,6 @@
 
     @include font(36px, 36px);
   }
-}
-
-.form__fieldset-title-wrapper {
-  position: relative;
 
   &::before {
     content: "";
