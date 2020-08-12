@@ -75,7 +75,7 @@
   padding-bottom: 20px;
   border-bottom: 1px solid $special-gray;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     &:first-child {
       border-top: 1px solid $special-gray;
     }
@@ -133,7 +133,7 @@
   @include font(14px, 14px);
   color: $special-dark-gray;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     justify-content: space-between;
     margin: 15px 0;
   }
@@ -149,7 +149,7 @@
 }
 
 .additional__item-ammount {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     margin-right: 50px;
   }
 }
@@ -157,7 +157,7 @@
 .additional__item-link {
   text-align: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     width: 100%;
     padding: 6px 0;
   }
@@ -197,7 +197,7 @@
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     width: 100%;
     height: 200px;
     margin-top: 69px;
@@ -237,7 +237,7 @@
 
   @include font(16px, 20px);
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     text-align: left;
   }
 }

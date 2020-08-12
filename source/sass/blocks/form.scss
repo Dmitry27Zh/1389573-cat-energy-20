@@ -8,7 +8,7 @@
     box-sizing: border-box;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     width: 89%;
     margin: 0 auto;
   }
@@ -42,13 +42,9 @@
   @include reset;
 
   border: none;
-  max-width: 100%;
+  margin-top: 26px;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
-    margin-top: 26px;
-  }
-
-  @media (min-width: $mobile-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 70px;
   }
 }
@@ -59,7 +55,7 @@
 
   @include font(24px, 26px);
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     margin-bottom: 32px;
   }
 
@@ -79,7 +75,7 @@
     background-color: $basic-green;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     &::before {
       top: 18px;
       left: -11%;
@@ -116,7 +112,7 @@
 
 .form__fieldset-list {
   &--types {
-    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
       position: relative;
       padding-top: 22px;
       padding-bottom: 22px;
@@ -161,7 +157,7 @@
   }
 
   &--additional {
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       display: grid;
       grid-template-columns: 46% 46%;
       justify-content: space-between;
@@ -374,7 +370,7 @@
   font-family: $font-family-additional;
   line-height: 16px;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     text-align: center;
     margin-top: 21px;
   }
@@ -388,7 +384,7 @@
 .form__submit {
   @include font(16px, 20px);
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     margin-top: 34px;
     font-size: 20px;
   }

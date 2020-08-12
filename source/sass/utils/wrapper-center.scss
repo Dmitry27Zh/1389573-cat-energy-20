@@ -1,16 +1,12 @@
 .wrapper-center {
-  @media (min-width: $mobile-width) {
-    width: 87.5%;
-    margin: 0 auto;
-  }
+  width: 87.5%;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 92%;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto;
   }
 }

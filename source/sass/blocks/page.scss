@@ -23,13 +23,13 @@
   &--form,
   &--catalog {
     .contacts {
-      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width - 1) {
         background-color: $basic-gray;
       }
     }
 
     .site-nav__item:last-child {
-      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width - 1) {
         border-bottom: none;
       }
     }
@@ -37,7 +37,7 @@
 
   &--form {
     .page-title {
-      @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+      @media (min-width: $mobile-width) and (max-width: $desktop-width - 1) {
         border-bottom: none;
       }
     }

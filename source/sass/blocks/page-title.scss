@@ -6,7 +6,7 @@
 
   @include font(36px, 36px);
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     border-top: 1px solid $gray-border;
     border-bottom: 1px solid $basic-gray-2;
   }
