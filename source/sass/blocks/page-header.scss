@@ -1,10 +1,7 @@
 .page-header {
   min-height: 38px;
-
-  @media (min-width: $mobile-width) {
-    padding-top: 11px;
-    padding-bottom: 17px;
-  }
+  padding-top: 11px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     padding-top: 24px;
@@ -31,10 +28,8 @@
 }
 
 .page-header__logo {
-  @media (min-width: $mobile-width) {
-    width: 191px;
-    height: 38px;
-  }
+  width: 191px;
+  height: 38px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -44,6 +39,15 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: 0.8;
+    }
+
+    &[href]:active {
+      opacity: 0.6;
+    }
   }
 }
 

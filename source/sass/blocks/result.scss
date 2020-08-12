@@ -52,7 +52,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
   .result__numbers {
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@
 .result__cost {
   text-transform: uppercase;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     margin-top: 25px;
     margin-bottom: 42px;
     text-align: center;
@@ -128,7 +128,7 @@
     @include font(20px, 20px);
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     width: 174px;
     text-align: end;
   }
@@ -147,7 +147,7 @@
 .result__slider {
   width: 311px;
 
-  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  @media (min-width: $mobile-width) and (max-width: $desktop-width - 1) {
     margin: 0 auto;
   }
 
@@ -155,7 +155,7 @@
     width: 690px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     margin-top: 59px;
   }
 
@@ -180,7 +180,7 @@
   align-items: center;
   margin: 0 auto;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     width: 200px;
     margin-top: 23px;
   }
@@ -215,7 +215,7 @@
   position: relative;
   border-radius: 6px;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     width: 82px;
     height: 12px;
     background-color: $basic-white;
@@ -232,7 +232,7 @@
 .result__slider-toggle {
   position: absolute;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     top: 3px;
     left: 6px;
     width: 35px;

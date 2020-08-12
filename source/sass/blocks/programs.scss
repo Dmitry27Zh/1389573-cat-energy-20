@@ -14,11 +14,11 @@
 }
 
 .programs__list {
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     margin-bottom: -20px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     margin-bottom: -30px;
   }
 
@@ -58,7 +58,7 @@
     }
   }
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     margin-bottom: 20px;
     padding: 20px;
 
@@ -88,7 +88,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     margin-bottom: 30px;
     padding: 77px 280px 52px 52px;
 
@@ -154,7 +154,7 @@
   @include font(24px, 37px);
   text-transform: uppercase;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     padding: 6px 0;
     padding-left: 73px;
     margin-bottom: 20px;
@@ -177,7 +177,7 @@
   margin: 0;
   font-family: $font-family-additional;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     padding-bottom: 20px;
     margin-bottom: 15px;
     color: $special-dark-gray;
@@ -200,7 +200,7 @@
   color: $basic-black;
   text-transform: uppercase;
 
-  @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+  @media (min-width: $mobile-width) and (max-width: $desktop-width - 1) {
     @include font(16px, 16px);
   }
 
@@ -214,6 +214,10 @@
       transform: scaleX(1.3);
       transform-origin: top left;
     }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

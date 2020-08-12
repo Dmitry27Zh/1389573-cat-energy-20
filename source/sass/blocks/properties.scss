@@ -19,7 +19,7 @@
 }
 
 .properties__list {
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     margin-bottom: -20px;
   }
 
@@ -75,7 +75,7 @@
     }
   }
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     display: flex;
     padding-left: 80px;
     margin-bottom: 20px;
@@ -124,7 +124,7 @@
   font-family: $font-family-additional;
   color: $special-dark-gray;
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
     margin: auto;
   }
 
