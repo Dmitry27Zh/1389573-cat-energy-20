@@ -34,7 +34,7 @@ exports.styles = styles;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg, png, svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
@@ -48,7 +48,7 @@ exports.images = images;
 // Webp
 
 const webpics = () => {
-  return gulp.src("source/img/**/*.{jpg, png}")
+  return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe (gulp.dest("source/img"))
 }
@@ -76,7 +76,7 @@ exports.sprite = sprite;
 
 const copy = () => {
   return gulp.src([
-    "source/fonts/**/*.{woff, woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico",
