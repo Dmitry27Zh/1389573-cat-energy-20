@@ -35,6 +35,7 @@
   &--fb:hover,
   &--fb:focus {
     .social-list__link-icon {
+      fill: none;
       stroke: $basic-green;
     }
   }
