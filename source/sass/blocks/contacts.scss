@@ -67,17 +67,25 @@
 }
 
 .contacts__map {
-  display: block;
+  position: relative;
   width: 100%;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
-
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
     z-index: -1;
   }
+}
+
+.contacts__map-static,
+.contacts__map-live {
+  display: block;
+  width: 100%;
+  border: none;
+  height: 400px;
+}
+
+.contacts__map-live {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
