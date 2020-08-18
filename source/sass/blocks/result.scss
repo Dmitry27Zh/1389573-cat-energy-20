@@ -6,8 +6,19 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 43px;
-    padding-bottom: 33px;
+    padding-bottom: 60px;
     border-top: 1px solid $mobile-menu-border;
+    background-color: transparent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      width: 100%;
+      height: 462px;
+      background-color: $basic-gray;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -110,6 +121,10 @@
     bottom: -5px;
     width: auto;
     padding: 0 10px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    background-color: $basic-white;
   }
 }
 
