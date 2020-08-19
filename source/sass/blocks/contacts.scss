@@ -18,14 +18,17 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 6%;
+    padding: 0 80px;
     padding-top: 65px;
     padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    z-index: 10;
     box-sizing: border-box;
-    width: 46%;
+    width: 570px;
     background-color: $basic-white;
   }
 }
@@ -45,19 +48,12 @@
 }
 
 .contacts__address {
+  width: 140px;
   margin: 0;
   font-family: $font-family-additional;
   color: $special-dark-gray;
 
   @include font(14px, 20px);
-
-  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
-    width: 140px;
-
-    br {
-      display: none;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     width: 160px;
@@ -69,10 +65,10 @@
 .contacts__map {
   position: relative;
   width: 100%;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
-    z-index: -1;
   }
 }
 

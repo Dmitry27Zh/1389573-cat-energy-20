@@ -217,7 +217,11 @@
   padding-right: 47px;
   margin-left: 14px;
   outline: none;
-  border: 1px solid $special-gray;
+  border: 1px solid $form-input-border;
+
+  &:hover {
+    border-color: $slider-scale-gray;
+  }
 
   &:focus {
     border-color: $special-dark-gray;
@@ -343,6 +347,10 @@
   font-family: inherit;
   outline: none;
   border: 1px solid $form-input-border;
+
+  &:hover {
+    border-color: $slider-scale-gray;
+  }
 
   &:focus {
     border-color: $special-dark-gray;

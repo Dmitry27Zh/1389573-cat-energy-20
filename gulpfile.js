@@ -11,7 +11,6 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const sync = require("browser-sync").create();
 const del = require("del");
-const uglify = require("gulp-uglify");
 const htmlmin = require("gulp-htmlmin");
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
@@ -59,16 +58,6 @@ const webpics = () => {
 }
 
 exports.webpics = webpics;
-
-// Uglify
-
-const uglifyJS = () => {
-  return gulp.src("source/js/**/*.js")
-    .pipe(uglify())
-    .pipe(gulp.dest("build/js"))
-}
-
-exports.uglifyJS = uglifyJS;
 
 // Sprite
 
