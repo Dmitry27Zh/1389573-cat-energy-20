@@ -223,6 +223,15 @@
     border-bottom: 1px dotted rgba($basic-black, 0.24);
 
     @include font(20px, 30px);
+
+    &:hover,
+    &:focus {
+      border-style: solid;
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 }
 
@@ -270,7 +279,22 @@
     background-color: $basic-green;
     border: 13px solid $basic-white;
     border-radius: 50%;
-    box-shadow: 0 1px 3px rgba($basic-black, 0.16);
+    box-shadow:
+      0 0 0 1px $slider-scale-gray,
+      0 1px 3px rgba($basic-black, 0.16);
+
+    &:hover,
+    &:focus {
+      box-shadow:
+        0 0 0 1px $slider-scale-gray,
+        0 2px 4px rgba($basic-black, 0.19);
+    }
+
+    &:active {
+      box-shadow:
+        0 0 0 1px $basic-green,
+        0 3px 5px rgba($basic-black, 0.2);
+    }
 
     &--right {
       left: auto;

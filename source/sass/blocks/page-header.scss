@@ -28,8 +28,12 @@
 }
 
 .page-header__logo {
-  width: 191px;
-  height: 38px;
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 38px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -53,4 +57,18 @@
 
 .page-header__logo-img {
   display: block;
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width - 1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.page-header__logo-sub {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
